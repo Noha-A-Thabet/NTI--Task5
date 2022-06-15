@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* start nav */
+nav {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #eee;
+}
+
+.main {
+    width: 70%;
+    position: relative;
+    margin: auto;
+
+}
+
+.logo {
+    width: 40%;
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.menu {
+    position: absolute;
+    width: 800px;
+    right: 0px;
+    text-align: center;
+    height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+}
+
+.menu ul li {
+    padding: 5px;
+    width: 130px;
+    height: 50px;
+    float: left;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    height: 50px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: white;
+    border-bottom: 1px solid purple;
+}
+
+.subMenu {
+    height: 0;
+    overflow: hidden;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+
+.dropDown:hover .subMenu {
+    height: 150px;
+}
+
+/* end nav */
+/* start header */
+header {
+    margin-top: 20px;
+    height: 550px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    display: block;
+    margin: auto;
+
+
+}
+
+.header_info {
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    text-align: justify;
+    position: absolute;
+    left: calc(50% - 400px);
+    top: calc(50% - 23px);
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.39);
+}
+
+.header_info h4 {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+
+.header_info p {
+    line-height: 25px;
+    color: white;
+    padding: 10px 15px;
+}
+
+/* end header */
+
+/* start about */
+.about {
+    background-color: #eee;
+    height: 700px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about_inner {
+
+    height: 700px;
+    position: relative;
+}
+
+.about_info {
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    right: 0px;
+    top: calc(50% - 150px);
+    padding: 10px;
+    z-index: 3;
+}
+
+.about_info h3 {
+    text-align: center;
+}
+
+.about_info p {
+    line-height: 25px;
+    padding: 10px;
+}
+
+.about_pic {
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    left: 0px;
+    top: calc(50% - 180px);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.about_pic img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto auto;
+}
+
+
+/* end about */
+/* strat ballon */
+.ballon {
+    height: 550px;
+    background-image: url(../images/manik-rathee-a8YV2C3yBMk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: grayscale(30%);
+    -webkit-filter: grayscale(30%);
+    margin-bottom: 20px;
+}
+
+.ballon_text {
+    position: relative;
+    height: 550px;
+}
+
+.ballon_text .text1 {
+    color: black;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50px;
+    top: calc(50% - 200px);
+    text-align: center;
+    line-height: 13;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: white;
+}
+
+.ballon_text .text2 {
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    right: 50px;
+    top: calc(50% - 150px);
+    left: calc(50% - 400px);
+    text-align: center;
+    line-height: 3;
+    text-transform: capitalize;
+    color: white;
+    font-size: 17px;
+}
+
+.ballon_text .text2 button {
+    text-align: left;
+    display: inline-block;
+    background-color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.ballon_text .text2 button a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* end ballon */
+/* strat footer */
+footer {
+    height: 350px;
+    position: relative;
+}
+
+.inner_footer {
+    position: absolute;
+    height: 350px;
+    width: 1500px;
+    column-count: 4;
+    left: calc(50% - 800px);
+}
+
+.inner_footer figure {
+    padding: 0 100px;
+}
+
+
+.inner_footer figure img {
+    width: 200px;
+}
+
+.inner_footer figcaption {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* end footer */
